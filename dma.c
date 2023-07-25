@@ -3,9 +3,7 @@
 
 void dma_init() 
 {
-    *(uint32_t*)DMA_CONTROL  = DMA_CTRL_CLAIM;
-    
-      
+    *(uint32_t*)DMA_CONTROL  = DMA_CTRL_CLAIM;   
 }
 /*запуск передачи DMA*/
 void dma_start_transfer_i(uint32_t *src, uint32_t *dst, int len)
